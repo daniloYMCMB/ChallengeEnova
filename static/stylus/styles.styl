@@ -1,0 +1,248 @@
+body 
+	background #f7f8fb
+	
+.Header
+	font-size 0
+	text-align center
+	background white
+	box-shadow 0px 0px 0px 1px #b7b7b7
+	
+.Header-container
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	max-width 1200px
+	width 90%
+	margin auto
+	font-size 15px
+	
+.Header-containerLeft,
+.Header-containerRight
+	width 50%
+	
+.Header-containerLeft
+	text-align left
+	display flex
+	justify-content left
+
+.Header-boardsButtonIcon
+	position relative
+	margin-left 40px
+	margin-right 40px
+	&:before
+		content "\e900"
+		position absolute
+		height 120px
+		margin auto
+		left -25px
+		font-family icomoon	
+		top 4px
+		font-size 13px
+
+.Header-search
+	position relative
+	margin-right 10px
+	margin-left 4	0px
+	input
+		border none
+		background transparent
+	&:before
+		content "\e900"
+		position absolute
+		height 120px
+		margin auto
+		left -18px
+		font-family icomoon	
+		top 6px
+		font-size 13px
+		color gray
+		
+	
+.Header-containerRight
+	text-align right
+	display flex
+	justify-content flex-end
+	align-items center
+
+.Header-user
+	text-align center
+
+.Header-userImg
+	display flex
+	img
+		max-width 60px
+	
+.Instagram-icon
+	margin-right 10px
+	font-size 20px
+	background red
+	border-radius 5px
+	width 35px
+	height 35px
+	line-height 35px
+	
+.Header-userName
+	line-height 2
+	
+.Header-notifications
+	margin 0 20px
+
+.Header-hamburguesa
+	position relative
+	padding 20px
+	&:before
+		content ""
+		position absolute
+		width 1px
+		height 100%
+		background gray
+		top 0
+		left 0
+		
+
+.Board-container
+	max-width 1200px
+	width 98%
+	margin auto
+	position relative
+	
+.Board-title
+	display flex
+	position absolute
+	top 30px
+	left 10px
+
+.Board-titleIcon
+	font-size 30px
+	margin-right 15px
+
+.Board-titleName
+	h2
+		font-size 14px
+		margin-bottom 0
+	p
+		font-size 13px
+
+.Board-content
+	text-align center
+	padding-top 30px
+	
+.Board-tab
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #f1f1f1;
+	text-align center
+	display inline-block
+	font-size 0
+	margin-bottom 20px
+
+.Board-tab li 
+	display inline-block
+
+.Board-tab li a
+	display block
+	color: gray
+	text-align: center
+	text-decoration: none
+	transition: 0.3s
+	font-size: 15px
+	font-weight inherit
+	border 1px solid transparent
+	background #f7f8fb
+	padding 7px 20px
+	box-shadow 0px 0px 0px 1px #b7b7b7
+	&.active,
+	&:hover
+		background white 
+		font-weight bold
+		border 1px solid transparent
+		box-shadow 0px 0px 1px 2px #d8d8d8
+
+.active
+	display block
+	
+.Board-chart
+	display none
+	&.active
+		display block
+	
+.Board-chartMetrics
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	align-items strech
+	width 100%
+
+img
+	max-width 100%
+	height auto
+	display block
+	
+.Chart-style
+	margin 15px
+	box-shadow 0px 0px 10px 2px #d8d8d8
+	overflow hidden
+	border-radius 7px
+	
+.Board-chartMetrics-large
+	width 70%
+	
+.Board-chartMetrics-medium
+	width 40%
+
+.cuadrado
+	background white
+	margin 0px
+	width 100%
+	min-height 250px
+
+
+.Board-chartLists
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	
+.Board-chartLists-medium
+	width 50%
+
+@media screen and (max-width: 960px)
+	.Board-chartMetrics	
+		margin-bottom 270px
+		position relative
+		justify-content center
+		
+	.Board-chartMetrics-large
+		position absolute
+		top 100%
+		margin 15px auto
+		width 97%
+		
+	.Board-chartMetrics-medium
+		width 48%
+
+@media screen and (max-width: 550px)
+	.Board-chartMetrics	
+		margin-bottom 280px
+		position relative
+		justify-content center
+		flex-direction column
+		
+	.Board-chartMetrics-large
+		margin 15px
+		width 93%
+		
+	.Board-chartMetrics-medium,
+	.Board-chartLists-medium
+		width 93%
+		
+	.Board-chartLists
+		flex-direction column
+		
+
